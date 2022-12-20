@@ -36,7 +36,7 @@ int main()
         setfillstyle(SOLID_FILL,BLACK); // initialization back ground color
         bar(0,0,630,470);  //  initializing background size or wide (lower width 630 and right length 470)
 
-        setfillstyle(SOLID_FILL,YELLOW);  // initializing boarder color
+        setfillstyle(SOLID_FILL,RED);  // initializing boarder color
 
         bar(0,0,630,10); // upper boarder width,length
 
@@ -47,7 +47,7 @@ int main()
         bar(620,10,630,470); // lower boarder width,length
 
 
-        setfillstyle(SOLID_FILL,	WHITE); // initialization food color
+        setfillstyle(SOLID_FILL,	GREEN); // initialization food color
 
         if(snakeX[0] == foodX && snakeY[0] == foodY) // checking snake and food is in the same position or not
         {
@@ -155,7 +155,7 @@ int main()
            if(i&1)
             setfillstyle(SOLID_FILL,	YELLOW); // initialize snake color
           else{
-            setfillstyle(SOLID_FILL,	RED);
+            setfillstyle(SOLID_FILL,	YELLOW);
             bar(snakeX[i], snakeY[i], snakeX[i] + 5, snakeY[i] + 5);
           }
 
